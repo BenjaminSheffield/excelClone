@@ -1,2 +1,2 @@
-# excelClone
+# Excel clone
 Excel clone
