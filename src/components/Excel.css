@@ -1,0 +1,76 @@
+.navbar {
+  /* overflow: hidden; */
+  /* background-color: #333; */
+  position: sticky; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* overflow: visible; */
+  /* min-width: 4000; */
+  float: left;
+}
+
+.main,
+.sidebar {
+  /* background-color: #fff; */
+}
+
+.row,
+.column{
+  background-color: #edebe9;
+  /* border: none; */
+  /* border-width: 1px */
+}
+
+.sideRows{
+  background-color: #edebe9;
+  float: left;
+}
+
+
+.enteredCell {
+  border-color: #217346;
+  border-width: 2px;
+  /* background-color: #e1f5e9; */
+}
+
+.enteredCellParentColumn,
+.enteredCellParentRow {
+  border-bottom-color : #217346;
+  background-color: #dad8d6;  
+  border-width: 2px;
+  color: #217346;
+}
+/* 
+.enteredCellParentRow {
+  border-right-color : #217346;
+} */
+
+.italic{
+  font-style: italic;
+}
+
+.sidebar {
+  position: sticky;
+    top: 0px;
+    left: 0px;
+    max-height: 100%;
+}
+
+.active{
+  background-color: #217346;
+}
+
+
+.grid{
+  white-space: nowrap;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
