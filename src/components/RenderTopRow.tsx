@@ -1,4 +1,5 @@
 import * as React from "react";
+import './Excel.css';
 
 import GenerateColumnName from "./GenerateColumnName";
 
@@ -20,7 +21,7 @@ export interface Props {
   
     render() {
       return (        
-           <div>
+           <div key={'navbar'} className="navbar">
                {this.RenderTopRow(this.state.columns)}
           </div>
       );
@@ -33,7 +34,7 @@ export interface Props {
           indents.push(<input className="row" readOnly id={uniqueId} key={uniqueId} value={uniqueId}/>);
         }
         return [     
-          <nav key={'navbar'} className="navbar">
+          <nav key="nav">
               {indents}
           </nav>
         ];

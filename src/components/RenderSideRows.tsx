@@ -25,7 +25,7 @@ export interface Props {
     }
 
     RenderSideRows(columns: number){    
-        var indents = [<input readOnly key={columns}/>];
+        var indents = [<input readOnly key={"TopRowHolder"}/>];
         for (let j = 0; j < columns; j++) {
           var uniqueId = (j+1).toString();
           indents.push(<input className="sideRows" readOnly id={uniqueId} key={uniqueId} value={uniqueId}/>);
